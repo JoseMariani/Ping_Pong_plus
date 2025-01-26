@@ -38,7 +38,7 @@
         <div class="titulo-ping-pong">
           <span>PING&nbsp;&nbsp;&nbsp;PONG</span>
         </div>
-
+        
         <div class="menu menu-principal active">
           <div class="boton boton-un-jugador"><p>JUGAR</p></div>
           <div class="boton boton-multijugador"><p>MULTIJUGADOR</p></div>
@@ -48,6 +48,11 @@
           <div class="boton boton-opciones"><p>OPCIONES</p></div>
         </div>
 
+  <div class="banners">
+    <img src="path/to/banner1.png" alt="Banner 1" class="banner" />
+    <img src="path/to/banner2.png" alt="Banner 2" class="banner" />
+  </div>
+        
         <div class="menu menu-multijugador">
           <div class="boton boton-local"><p>LOCAL</p></div>
           <div class="boton boton-online"><p>ONLINE</p></div>
@@ -114,15 +119,15 @@
         </footer>
       </div>
 
-      <div class="game-over">
-        <div class="puntaje-final">
-          <span class="puntaje-final-1">0</span>
-          <span class="puntaje-final-2">0</span>
-        </div>
-        <span class="ganador"></span>
-        <div class="boton boton-reintentar"><p>REINTENTAR</p></div>
-        <div class="boton boton-salir"><p>SALIR</p></div>
-      </div>
+    <div class="game-over" id="gameOverBanner">
+  <div class="puntaje-final">
+    <span class="puntaje-final-1">0</span>
+    <span class="puntaje-final-2">0</span>
+  </div>
+  <span class="ganador"></span>
+  <div class="boton boton-reintentar" onclick="retryGame()"><p>REINTENTAR</p></div>
+  <div class="boton boton-salir"><p>SALIR</p></div>
+</div>
     </main>
     <script
       src="https://kit.fontawesome.com/7b9f8c27b2.js"
